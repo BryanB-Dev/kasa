@@ -1,6 +1,8 @@
-export default function Collapse() {
+import "./style.scss"
+
+export default function Link( {title, href} ) {
 
     return (
-        <h3>test</h3>
+        <a className="link" href={href}>{title}</a>
     )
 }

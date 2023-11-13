@@ -6,6 +6,7 @@ import Footer from "./components/organisms/Footer";
 import CardContainer from "./components/organisms/CardContainer";
 import "./styles/style.scss";
 import Rate from "./components/molecules/Rate";
+import Infos from "./components/molecules/Infos";
 
 const test = 5;
 
@@ -17,6 +18,7 @@ function App() {
       <CardContainer />
       <Host />
       <Rate rating={test}/>
+      <Infos title="Cozy loft on the Canal Saint-Martin" location="Paris, Ile de France"/>
       <Footer />
     </div>
   );

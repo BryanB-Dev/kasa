@@ -2,12 +2,12 @@ import HostName from "../../atoms/HostName";
 import HostPicture from "../../atoms/HostPicture";
 import "./style.scss";
 
-export default function Host() {
+export default function Host({ name, img, title }) {
 
     return (
         <div className="host">
-            <HostName name={"" || "John Doe"} />
-            <HostPicture img="" title=""/>
+            <HostName name={name} />
+            <HostPicture img={img} title={title}/>
         </div>
     )
 }

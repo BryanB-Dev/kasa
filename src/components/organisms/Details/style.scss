@@ -1,0 +1,24 @@
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    &__host {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap:20px
+    }
+}

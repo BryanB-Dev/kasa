@@ -1,4 +1,4 @@
-import Card from '../../atoms/Card';
+import Card from '../../molecules/Card';
 
 export default function Gallery() {
 

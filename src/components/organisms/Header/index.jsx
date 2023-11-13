@@ -1,4 +1,4 @@
-import Navbar from '../../atoms/Navbar';
+import Navbar from '../../molecules/Navbar';
 import Logo from '../../../assets/images/logo.svg';
 
 export default function Header() {

@@ -1,9 +1,10 @@
-import Header from './components/molecules/Header';
+import HostName from "./components/atoms/HostName";
+import "./styles/style.scss";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <HostName />
     </div>
   );
 }

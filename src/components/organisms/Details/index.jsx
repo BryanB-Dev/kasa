@@ -1,7 +1,7 @@
-import Infos from '../../atoms/Infos';
-import Host from '../../atoms/Host';
+import Infos from '../../molecules/Infos';
+import Host from '../../molecules/Host';
 import Tag from '../../atoms/Tag';
-import Rate from '../../atoms/Rate';
+import Rate from '../../atoms/Star';
 import Collapse from '../../atoms/Collapse';
 
 export default function Details() {

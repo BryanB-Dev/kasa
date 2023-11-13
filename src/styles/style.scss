@@ -2,11 +2,15 @@
 
 * {
     margin: 0;
-    font-family: Montserrat;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
     line-height: 142.6%; /* 25.668px */ 
 }
 
 body {
     max-width: 1240px;
-    margin: auto;
+    padding-top: 40px;
+    margin: 0 auto;
 }

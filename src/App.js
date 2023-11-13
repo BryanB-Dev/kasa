@@ -5,6 +5,7 @@ import Host from "./components/molecules/Host";
 import Footer from "./components/organisms/Footer";
 import "./styles/style.scss";
 import Card from "./components/molecules/Card";
+import CardContainer from "./components/organisms/CardContainer";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <Banner src={BannerImg} title="Chez vous, partout et ailleurs"/>
       {/* <Host /> */}
-      <Card img={BannerImg} title="Titre de la location" />
+      <CardContainer />
       <Footer />
     </div>
   );

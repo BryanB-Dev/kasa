@@ -1,12 +1,13 @@
 import Navbar from '../../molecules/Navbar';
 import Logo from '../../../assets/images/logo.svg';
+import "./style.scss";
 
 export default function Header() {
 
     return (
-        <div>
-            <img src={Logo} />
+        <header className='header'>
+            <img src={Logo} alt='Logo' />
             <Navbar />
-        </div>
+        </header>
     )
 }

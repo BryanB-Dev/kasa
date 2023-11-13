@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 66px;
+    padding-bottom: 29px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 28.556px;
+    background-color: black;
+
+    &__text {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 142.6%;
+    }
+}

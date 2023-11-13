@@ -3,6 +3,7 @@ import Banner from "./components/molecules/Banner";
 import BannerImg from "./assets/images/banner-1.png";
 import Host from "./components/molecules/Host";
 import "./styles/style.scss";
+import Footer from "./components/organisms/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Banner src={BannerImg} title="Chez vous, partout et ailleurs"/>
       <Host />
+      <Footer />
     </div>
   );
 }

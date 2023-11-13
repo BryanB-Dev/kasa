@@ -1,6 +1,5 @@
-export default function Collapse() {
+import "./style.scss";
 
-    return (
-        <h3>test</h3>
-    )
+export default function HostPicture({ img, title }) {
+  return <img className="hostImg" src={img} alt={title} />;
 }

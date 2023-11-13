@@ -1,12 +1,10 @@
-import HostName from "./components/atoms/HostName";
-import HostPicture from "./components/atoms/HostPicture";
+import Host from "./components/molecules/Host";
 import "./styles/style.scss";
 
 function App() {
   return (
     <div className="App">
-      <HostName />
-      <HostPicture img="" title="title"/>
+      <Host />
     </div>
   );
 }

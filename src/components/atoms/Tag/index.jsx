@@ -1,6 +1,8 @@
-export default function Tag() {
+import "./style.scss";
+
+export default function Tag({title}) {
 
     return (
-        <h3>test</h3>
+        <p className="tag">{title}</p>
     )
 }

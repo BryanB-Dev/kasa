@@ -7,6 +7,7 @@ import CardContainer from "./components/organisms/CardContainer";
 import "./styles/style.scss";
 import Rate from "./components/molecules/Rate";
 import Infos from "./components/molecules/Infos";
+import Tag from "./components/atoms/Tag";
 
 const test = 5;
 
@@ -19,6 +20,7 @@ function App() {
       <Host />
       <Rate rating={test}/>
       <Infos title="Cozy loft on the Canal Saint-Martin" location="Paris, Ile de France"/>
+      <Tag title="Cozy"/>
       <Footer />
     </div>
   );

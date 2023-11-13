@@ -1,6 +1,11 @@
-export default function Banner({ src, alt }) {
+import "./style.scss";
+
+export default function Banner({ src, title }) {
 
     return (
-        <img src={src} alt={alt} />
+        <div className="banner">
+            <img className="banner__img" src={src} alt={title} />
+            <p className="banner__text">{title}</p>
+        </div>
     )
 }

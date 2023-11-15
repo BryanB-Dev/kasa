@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    gap: 139px;
+    color: #FF6060;
+    
+    &__h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 263px; 
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    &__h2 {
+        font-weight: 500;
+        font-size: 36px; 
+        text-align: center;
+    }
+
+    &__link {
+        text-align: center;
+    }
+}

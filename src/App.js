@@ -1,21 +1,21 @@
-import Header from "./components/organisms/Header";
-import Banner from "./components/molecules/Banner";
-import BannerImg from "./assets/images/banner-1.png";
-import Footer from "./components/organisms/Footer";
-import CardContainer from "./components/organisms/CardContainer";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./styles/style.scss";
-import Details from "./components/organisms/Details";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Infos from "./pages/Infos";
+import E404 from "./pages/404";
 import Datas from "./data/data.json";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      {/* <Banner src={BannerImg} title="Chez vous, partout et ailleurs"/> */}
-      {/* <CardContainer /> */}
-      <Details datas={Datas[0]}/>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/infos/:locationID" element={<Infos datas={Datas}/>} />
+        <Route path="*" element={<E404 />} />
+      </Routes>
+    </Router>
   );
 }
 

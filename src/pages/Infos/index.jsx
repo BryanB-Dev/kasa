@@ -4,10 +4,11 @@ import E404 from '../404';
 
 export default function Infos({ datas }) {
     const { locationID } = useParams()
+    const locationObject = datas.find(item => item.id === locationID)
 
-    if (datas[locationID]) {
+    if (locationObject) {
         return (
-            <InfosTemplate datas={datas[locationID]} />
+            <InfosTemplate datas={locationObject} />
         );
     } else {
         return (

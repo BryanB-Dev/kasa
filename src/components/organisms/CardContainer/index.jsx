@@ -1,14 +1,12 @@
 import Card from "../../molecules/Card";
-import BannerImg from "../../../assets/images/banner-1.png"
 import "./style.scss";
 
-export default function CardContainer() {
+export default function CardContainer({ datas }) {
   return (
     <section className="cardContainer">
-      <Card img={BannerImg} title="Titre de la location" href="/"/>
-      <Card img={BannerImg} title="Titre de la location" href="/"/>
-      <Card img={BannerImg} title="Titre de la location" href="/"/>
-      <Card img={BannerImg} title="Titre de la location" href="/"/>
+      {datas.map(({ id, title, cover }) => (
+        <Card img={cover} title={title} href={`/infos/${id}`} />
+      ))}
     </section>
   );
 }

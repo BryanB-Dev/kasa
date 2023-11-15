@@ -38,6 +38,5 @@ export default function Rate({ rating }) {
       );
     }
   }
-  console.log(stars);
   return <div className="rating">{stars}</div>;
 }

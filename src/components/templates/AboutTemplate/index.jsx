@@ -1,15 +1,14 @@
 import Header from "../../organisms/Header"
-import Details from "../../organisms/Details"
 import Footer from "../../organisms/Footer"
 
-export default function InfosTemplate({ datas }) {
+export default function AboutTemplate() {
 
-    const location = { home: false , about: false };
+    const location = { home: false , about: true };
 
     return (
         <>
             <Header location={location} />
-            <Details datas={datas} />
+            <h1>About</h1>
             <Footer />
         </>
     );

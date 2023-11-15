@@ -1,8 +1,8 @@
 import "./style.scss"
 
-export default function Link( {title, href} ) {
+export default function Link( {title, href, selected} ) {
 
     return (
-        <a className="link" href={href}>{title}</a>
+        <a className={`link ${selected ? 'link--selected' : ''}`} href={href}>{title}</a>
     )
 }

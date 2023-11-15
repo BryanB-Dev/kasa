@@ -1,15 +1,14 @@
 import Header from "../../organisms/Header"
-import Details from "../../organisms/Details"
 import Footer from "../../organisms/Footer"
 
-export default function InfosTemplate({ datas }) {
+export default function E404Template() {
 
     const location = { home: false , about: false };
 
     return (
         <>
             <Header location={location} />
-            <Details datas={datas} />
+            <h1>404</h1>
             <Footer />
         </>
     );

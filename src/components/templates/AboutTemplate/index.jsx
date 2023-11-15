@@ -1,5 +1,7 @@
 import Header from "../../organisms/Header"
 import Footer from "../../organisms/Footer"
+import BannerImg from "../../../assets/images/banner-2.png";
+import Banner from "../../molecules/Banner";
 
 export default function AboutTemplate() {
 
@@ -8,7 +10,7 @@ export default function AboutTemplate() {
     return (
         <>
             <Header location={location} />
-            <h1>About</h1>
+            <Banner src={BannerImg} title="" />
             <Footer />
         </>
     );

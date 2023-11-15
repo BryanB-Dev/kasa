@@ -1,10 +1,17 @@
 import { useParams } from 'react-router-dom'
-import Details from "../../components/organisms/Details"
+import InfosTemplate from '../../components/templates/InfosTemplate';
+import E404 from '../404';
 
 export default function Infos({ datas }) {
     const { locationID } = useParams()
 
-	return (
-		<Details datas={datas[locationID]}/>
-	);
+    if (datas[locationID]) {
+        return (
+            <InfosTemplate datas={datas[locationID]} />
+        );
+    } else {
+        return (
+            <E404 />
+        );
+    }
 }

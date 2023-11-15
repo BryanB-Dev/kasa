@@ -3,17 +3,20 @@ import Footer from "../../organisms/Footer"
 import CardContainer from "../../organisms/CardContainer";
 import Banner from "../../molecules/Banner";
 import BannerImg from "../../../assets/images/banner-1.png";
+import "./style.scss";
 
 export default function HomeTemplate({ datas }) {
 
     const location = { home: true , about: false };
 
     return (
-        <>
+        <div className="home">
             <Header location={location} />
+            <div className="home__main">
             <Banner src={BannerImg} title="Chez vous, partout et ailleurs"/>
             <CardContainer datas={datas} />
+            </div>
             <Footer />
-        </>
+        </div>
     );
 }

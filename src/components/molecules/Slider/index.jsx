@@ -31,13 +31,13 @@ export default function Slider({ datas }) {
                         <img
                             className='slider__arrow--hover'
                             src={ArrowLeft}
-                            alt="Afficher l'image précédente"
+                            alt="Flèche vers la gauche"
                             onClick={prevPicture}
                         />
                         <img
                             className='slider__arrow--hover'
                             src={ArrowRight}
-                            alt="Afficher l'image suivante"
+                            alt="Flèche vers la droite"
                             onClick={nextPicture}
                         />
                     </div>

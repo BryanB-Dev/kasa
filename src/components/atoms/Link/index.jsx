@@ -1,8 +1,9 @@
+import { NavLink } from "react-router-dom"
 import "./style.scss"
 
-export default function Link( {title, href, selected} ) {
+export default function Link({ title, href }) {
 
     return (
-        <a className={`link ${selected ? 'link--selected' : ''}`} href={href}>{title}</a>
+        <NavLink className="link" to={href}>{title}</NavLink>
     )
 }

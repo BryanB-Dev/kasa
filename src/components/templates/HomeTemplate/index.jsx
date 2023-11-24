@@ -7,14 +7,12 @@ import "./style.scss";
 
 export default function HomeTemplate({ datas }) {
 
-    const location = { home: true , about: false };
-
     return (
         <div className="home">
-            <Header location={location} />
+            <Header />
             <div className="home__main">
-            <Banner src={BannerImg} title="Chez vous, partout et ailleurs"/>
-            <CardContainer datas={datas} />
+                <Banner src={BannerImg} title="Chez vous, partout et ailleurs" />
+                <CardContainer datas={datas} />
             </div>
             <Footer />
         </div>

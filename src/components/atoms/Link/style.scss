@@ -4,8 +4,8 @@
     font-size: 24px;
     font-weight: 500;
     text-decoration: none;
+}
 
-    &--selected {
-        text-decoration: underline;
-    }
+a.active {
+    text-decoration: underline;
 }

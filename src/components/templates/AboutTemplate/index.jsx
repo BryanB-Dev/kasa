@@ -5,11 +5,9 @@ import Banner from "../../molecules/Banner";
 
 export default function AboutTemplate() {
 
-    const location = { home: false , about: true };
-
     return (
         <>
-            <Header location={location} />
+            <Header />
             <Banner src={BannerImg} title="" />
             <Footer />
         </>

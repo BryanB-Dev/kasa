@@ -5,11 +5,9 @@ import Footer from "../../organisms/Footer"
 
 export default function InfosTemplate({ datas }) {
 
-    const location = { home: false , about: false };
-
     return (
         <>
-            <Header location={location} />
+            <Header />
             <Slider datas={datas}/>
             <Details datas={datas} />
             <Footer />

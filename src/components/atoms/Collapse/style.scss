@@ -7,21 +7,28 @@
     border-radius: 10px;
 
     &__header {
+        position: relative;
         background-color: $color-primary;
         border-radius: 10px;
         @include flex(row, space-between, center, 0px);
-        padding: 10px 20px 10px 10px;
-    }
+        padding: 10px;
 
+        @media screen and (max-width: $breakpoint-mobile){
+            font-size: 13px;
+        }
+    }
+    
     &__title {
-        color: $color-tertiary;
         font-weight: 500;
+        color: $color-tertiary;
     }
 
     &__arrow {
         cursor: pointer;
         transform: rotate(-180deg);
         transition: all 0.3s linear;
+        position: absolute;
+        right: 20px;
 
         &--open {
             transform: rotate(0deg);
@@ -33,6 +40,11 @@
         padding: 20px;
         max-height: 250px;
         transition: all .2s linear;
+        
+        @media screen and (max-width: $breakpoint-mobile){
+            max-height: 300px;
+            font-size: 13px;
+        }
 
         &--hidden {
             opacity: 0;

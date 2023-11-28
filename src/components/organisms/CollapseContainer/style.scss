@@ -1,0 +1,15 @@
+.collapseContainer {
+    display: flex;
+    justify-content: space-between;
+    &--row {
+        flex-direction: row;
+        gap: 76px;
+        font-size: 18px;
+    }
+    &--column {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 8.75%;
+        font-size: 20px;
+    }
+}

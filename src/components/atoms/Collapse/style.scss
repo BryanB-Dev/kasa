@@ -1,3 +1,43 @@
-* {
-    color:red
+.collapse {
+    width: 100%;
+    height: fit-content;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+
+    &__header {
+        background-color: #FF6060;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 10px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-weight: 500;
+    }
+
+    &__arrow {
+        cursor: pointer;
+        transform: rotate(-180deg);
+        transition: all 0.3s linear;
+
+        &--open {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__content {
+        color: #FF6060;
+        padding: 20px;
+        max-height: 250px;
+        transition: all .2s linear;
+
+        &--hidden {
+            opacity: 0;
+            padding: 0px 20px;
+            max-height: 0;
+        }
+    }
 }

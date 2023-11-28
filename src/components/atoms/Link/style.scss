@@ -6,6 +6,10 @@
     font-size: 24px;
     font-weight: 500;
     text-decoration: none;
+    @media screen and (max-width: $breakpoint-mobile){
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }
 
 a.active {

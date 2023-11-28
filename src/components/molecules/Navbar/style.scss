@@ -5,4 +5,7 @@
     @media screen and (max-width: $breakpoint-mobile){
         @include flex(row, center, center, 26px);
     }
+    .link {
+        text-transform: uppercase;
+    }
 }

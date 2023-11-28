@@ -8,13 +8,17 @@ import "./style.scss";
 export default function HomeTemplate({ datas }) {
 
     return (
-        <div className="home">
-            <Header />
-            <div className="home__main">
-                <Banner src={BannerImg} title="Chez vous, partout et ailleurs" />
-                <CardContainer datas={datas} />
+        <>
+            <div className="wrapper">
+                <div className="home">
+                    <Header />
+                    <div className="home__main">
+                        <Banner src={BannerImg} title="Chez vous, partout et ailleurs" />
+                        <CardContainer datas={datas} />
+                    </div>
+                </div>
             </div>
             <Footer />
-        </div>
+        </>
     );
 }

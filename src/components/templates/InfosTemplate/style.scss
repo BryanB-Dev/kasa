@@ -2,6 +2,7 @@
 
 .infosContainer {
     @include flex(column, flex-start, stretch, 50px);
+    padding-bottom: 50px;
     &__details {
         @include flex(column, flex-start, stretch, 30px);
     }

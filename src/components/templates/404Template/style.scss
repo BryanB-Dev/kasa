@@ -3,6 +3,7 @@
 .error {
     @include flex(column, flex-start, stretch, 139px);
     color: $color-primary;
+    padding-bottom: 139px;
     
     &__h1 {
         @include flex(row, center, center);

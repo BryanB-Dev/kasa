@@ -13,14 +13,18 @@ export default function InfosTemplate({ datas }) {
     ]
 
     return (
-        <div className="infosContainer">
-            <Header />
-            <div className="infosContainer__details">
-                <Slider datas={datas} />
-                <Details datas={datas} />
-                <CollapseContainer datas={collaspe} row={true} />
+        <>
+            <div className="wrapper">
+                <div className="infosContainer">
+                    <Header />
+                    <div className="infosContainer__details">
+                        <Slider datas={datas} />
+                        <Details datas={datas} />
+                        <CollapseContainer datas={collaspe} row={true} />
+                    </div>
+                </div>
             </div>
             <Footer />
-        </div>
+        </>
     );
 }

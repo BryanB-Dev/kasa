@@ -5,6 +5,10 @@
     height: 223px;
     @include flex(row, center, center, 0px);
 
+    @media screen and (max-width: $breakpoint-mobile){
+        height: 111px;
+    }
+
     &::before {
         content: '';
         border-radius: 25px;
@@ -28,5 +32,13 @@
         color: $color-tertiary;
         font-size: 48px;
         font-weight: 500;
+
+        @media screen and (max-width: $breakpoint-mobile){
+            font-size: 24px;
+            word-break: keep-all;
+            text-align: start;
+            padding: 0px 16px;
+            line-height: 100%;
+        }
     }
 }

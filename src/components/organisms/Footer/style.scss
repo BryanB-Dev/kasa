@@ -7,11 +7,20 @@
     padding-top: 66px;
     padding-bottom: 29px;
     background-color: black;
+    
+    @media screen and (max-width: $breakpoint-mobile){
+        @include flex(column, flex-end, center, 15px);
+    }
 
     &__text {
         color: $color-tertiary;
         text-align: center;
         font-size: 24px;
         font-weight: 500;
+        @media screen and (max-width: $breakpoint-mobile){
+            font-size: 12px;
+            word-break: keep-all;
+            width: 35%;
+        }
     }
 }

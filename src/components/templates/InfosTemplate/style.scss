@@ -1,0 +1,10 @@
+.infosContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 30px
+    }
+}

@@ -1,24 +1,17 @@
+@import '../../../styles/main.scss';
+
 .details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex(row, space-between);
     
     &__infos {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        @include flex(column, flex-start, stretch, 20px);
     }
-
+    
     &__tags {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
+        @include flex(row, flex-start, stretch, 10px);
     }
-
+    
     &__host {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap:20px
+        @include flex(column, flex-start, flex-end, 20px);
     }
 }

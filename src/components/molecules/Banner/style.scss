@@ -1,9 +1,9 @@
+@import '../../../styles/main.scss';
+
 .banner {
     position: relative;
     height: 223px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(row, center, center, 0px);
 
     &::before {
         content: '';

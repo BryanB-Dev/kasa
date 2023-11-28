@@ -1,3 +1,5 @@
+@import '../../../styles/main.scss';
+
 .collapse {
     width: 100%;
     height: fit-content;
@@ -7,9 +9,7 @@
     &__header {
         background-color: #FF6060;
         border-radius: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(row, space-between, center, 0px);
         padding: 10px 20px 10px 10px;
     }
 

@@ -1,13 +1,11 @@
+@import '../../../styles/main.scss';
+
 .error {
-    display: flex;
-    flex-direction: column;
-    gap: 139px;
+    @include flex(column, flex-start, stretch, 139px);
     color: #FF6060;
     
     &__h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(row, center, center);
         height: 263px; 
         font-size: 288px;
         font-weight: 700;

@@ -1,10 +1,8 @@
+@import '../../../styles/main.scss';
+
 .infosContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    @include flex(column, flex-start, stretch, 50px);
     &__details {
-        display: flex;
-        flex-direction: column;
-        gap: 30px
+        @include flex(column, flex-start, stretch, 30px);
     }
 }

@@ -1,6 +1,5 @@
+@import '../../../styles/main.scss';
+
 .host {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+    @include flex(row, center, center, 10px);
 }

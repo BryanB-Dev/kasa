@@ -1,13 +1,11 @@
+@import '../../../styles/main.scss';
+
 .footer {
-    display: flex;
+    @include flex(column, flex-end, center, 28.556px);
     left: 0;
     bottom: 0;
     padding-top: 66px;
     padding-bottom: 29px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 28.556px;
     background-color: black;
 
     &__text {

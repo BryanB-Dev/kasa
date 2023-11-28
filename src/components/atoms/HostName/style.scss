@@ -1,6 +1,7 @@
+@import '../../../styles/main.scss';
+
 .host__name {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, center, center, 0px);
     color: #FF6060;
     text-align: right;
     font-size: 18px;

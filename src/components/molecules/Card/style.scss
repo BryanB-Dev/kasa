@@ -1,3 +1,5 @@
+@import '../../../styles/main.scss';
+
 .card {
     position: relative;
     width: 340px;
@@ -26,7 +28,7 @@
         position: absolute;
         margin: 20px;
         bottom: 0;
-        color: #fff;
+        color: $color-tertiary;
         font-size: 18px;
     }
 }

@@ -2,7 +2,7 @@
 
 .host__name {
     @include flex(column, center, center, 0px);
-    color: #FF6060;
+    color: $color-primary;
     text-align: right;
     font-size: 18px;
     font-weight: 500;

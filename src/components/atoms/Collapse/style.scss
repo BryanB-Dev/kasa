@@ -3,18 +3,18 @@
 .collapse {
     width: 100%;
     height: fit-content;
-    background-color: #F6F6F6;
+    background-color: $color-secondary;
     border-radius: 10px;
 
     &__header {
-        background-color: #FF6060;
+        background-color: $color-primary;
         border-radius: 10px;
         @include flex(row, space-between, center, 0px);
         padding: 10px 20px 10px 10px;
     }
 
     &__title {
-        color: #FFF;
+        color: $color-tertiary;
         font-weight: 500;
     }
 
@@ -29,7 +29,7 @@
     }
 
     &__content {
-        color: #FF6060;
+        color: $color-primary;
         padding: 20px;
         max-height: 250px;
         transition: all .2s linear;

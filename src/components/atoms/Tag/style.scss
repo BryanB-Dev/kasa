@@ -1,6 +1,8 @@
+@import '../../../styles/main.scss';
+
 .tag {
-    color: #FFF;
-    background-color: #FF6060;
+    color: $color-tertiary;
+    background-color: $color-primary;
     min-width: 115px;
     height: 25px;
     padding: 0px 15px;

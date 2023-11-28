@@ -2,15 +2,14 @@
 
 .infos {
     @include flex(column, center, flex-start, 0px);
+    color: $color-primary;
 
     &__title {
-        color: #FF6060;
         font-size: 36px;
         font-weight: 500;
     }
 
     &__location {
-        color: #FF6060;
         font-size: 18px;
         font-weight: 500;
     }

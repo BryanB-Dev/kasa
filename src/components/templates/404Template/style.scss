@@ -2,7 +2,7 @@
 
 .error {
     @include flex(column, flex-start, stretch, 139px);
-    color: #FF6060;
+    color: $color-primary;
     
     &__h1 {
         @include flex(row, center, center);

@@ -4,13 +4,24 @@
     @include flex(column, center, flex-start, 0px);
     color: $color-primary;
 
+    @media screen and (max-width: $breakpoint-mobile) {
+        gap: 5px;
+    }
+
     &__title {
         font-size: 36px;
         font-weight: 500;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 18px;
+        }
     }
 
     &__location {
         font-size: 18px;
         font-weight: 500;
+        @media screen and (max-width: $breakpoint-mobile){
+            font-size: 14px;
+        }
     }
 }

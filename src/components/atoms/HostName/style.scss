@@ -6,4 +6,7 @@
     text-align: right;
     font-size: 18px;
     font-weight: 500;
+    @media screen and (max-width: $breakpoint-mobile){
+        font-size: 12px;
+    }
 }

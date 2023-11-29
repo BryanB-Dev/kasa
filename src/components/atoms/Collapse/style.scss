@@ -1,0 +1,65 @@
+@import '../../../styles/main.scss';
+
+.collapse {
+    width: 100%;
+    height: fit-content;
+    background-color: $color-secondary;
+    border-radius: 10px;
+
+    &__header {
+        position: relative;
+        background-color: $color-primary;
+        border-radius: 10px;
+        @include flex(row, space-between, center, 0px);
+        padding: 10px;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+            border-radius: 5px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        color: $color-tertiary;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            line-height: 100%;
+        }
+    }
+
+    &__arrow {
+        cursor: pointer;
+        transform: rotate(-180deg);
+        transition: all 0.3s linear;
+        position: absolute;
+        right: 20px;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            height: 28px;
+            width: 28px;
+        }
+
+        &--open {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__content {
+        color: $color-primary;
+        padding: 20px;
+        max-height: 250px;
+        transition: all .2s linear;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            max-height: 300px;
+            font-size: 13px;
+        }
+
+        &--hidden {
+            opacity: 0;
+            padding: 0px 20px;
+            max-height: 0;
+        }
+    }
+}

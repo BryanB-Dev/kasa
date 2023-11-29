@@ -1,0 +1,13 @@
+@import '../../../styles/main.scss';
+
+.nav {
+    @include flex(row, center, center, 57px);
+    @media screen and (max-width: $breakpoint-mobile){
+        @include flex(row, center, center, 26px);
+    }
+    .link {
+        @media screen and (max-width: $breakpoint-mobile){
+            text-transform: uppercase;
+        }
+    }
+}

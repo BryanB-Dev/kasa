@@ -1,0 +1,20 @@
+@import '../../../styles/main.scss';
+
+.tag {
+    @include flex(row, flex-start, center);
+    color: $color-tertiary;
+    background-color: $color-primary;
+    min-width: 115px;
+    height: 25px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    flex-shrink: 0;
+    @media screen and (max-width: $breakpoint-mobile){
+        min-width: 84px;
+        height: 18px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+}

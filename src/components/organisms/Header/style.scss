@@ -1,0 +1,10 @@
+@import '../../../styles/main.scss';
+
+.header {
+    @include flex(row, space-between, center);
+    >img{
+        @media screen and (max-width: $breakpoint-mobile){
+            height: 47px;
+        }
+    }
+}

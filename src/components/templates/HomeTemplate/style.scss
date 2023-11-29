@@ -1,0 +1,12 @@
+@import '../../../styles/main.scss';
+
+.home {
+    @include flex(column, flex-start, stretch, 50px);
+    padding-bottom: 50px;
+    @media screen and (max-width: $breakpoint-mobile){
+        padding-bottom: 27px;
+    }
+    &__main {
+        @include flex(column, flex-start, stretch, 43px);
+    }
+}

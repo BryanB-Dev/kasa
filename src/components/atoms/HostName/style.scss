@@ -1,0 +1,12 @@
+@import '../../../styles/main.scss';
+
+.host__name {
+    @include flex(column, center, center, 0px);
+    color: $color-primary;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    @media screen and (max-width: $breakpoint-mobile){
+        font-size: 12px;
+    }
+}

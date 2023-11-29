@@ -1,0 +1,17 @@
+@import '../../../styles/main.scss';
+
+.cardContainer {
+    border-radius: 25px; 
+    background-color: $color-secondary;
+    padding: 56px 50px 43px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 60px;
+    
+    @media screen and (max-width: $breakpoint-mobile){
+        grid-template-columns: 1fr;
+        padding: 0px;
+        gap: 20px;
+        background-color: $color-tertiary;
+    }
+}

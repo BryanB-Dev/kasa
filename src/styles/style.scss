@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import './main.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 142.6%; /* 25.668px */ 
+}
+
+body {
+    padding-top: 40px;
+    margin: 0 auto;
+    @media screen and (max-width: $breakpoint-mobile){
+        padding-top: 20px;
+    }
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $breakpoint-mobile){
+        padding: 0px 20px;
+    }
+}

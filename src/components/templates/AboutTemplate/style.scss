@@ -1,0 +1,6 @@
+@import '../../../styles/main.scss';
+
+.aboutContainer {
+    @include flex(column, flex-start, stretch, 38px);
+    padding-bottom: 38px;
+}

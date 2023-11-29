@@ -1,0 +1,24 @@
+@import '../../../styles/main.scss';
+
+.details {
+    @include flex(row, space-between);
+    
+    @media screen and (max-width: $breakpoint-mobile){
+        @include flex(column, space-between, stretch, 10px);
+    }
+    
+    &__infos {
+        @include flex(column, flex-start, stretch, 20px);
+    }
+    
+    &__tags {
+        @include flex(row, flex-start, stretch, 10px);
+    }
+    
+    &__host {
+        @include flex(column, flex-start, flex-end, 20px);
+        @media screen and (max-width: $breakpoint-mobile){
+            @include flex(row-reverse, space-between, center);
+        }
+    }
+}

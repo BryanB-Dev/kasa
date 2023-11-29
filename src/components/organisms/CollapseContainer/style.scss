@@ -1,0 +1,21 @@
+@import '../../../styles/main.scss';
+
+.collapseContainer {
+    &--row {
+        @include flex(row, space-between, stretch, 76px);
+        font-size: 18px;
+        @media screen and (max-width: $breakpoint-mobile){
+            @include flex(column, space-between, stretch, 20px);
+            font-size: 13px;
+        }
+    }
+    &--column {
+        @include flex(column, space-between, stretch, 30px);
+        padding: 0px 8.75%;
+        font-size: 20px;
+        @media screen and (max-width: $breakpoint-mobile){
+            padding: 0px;
+            font-size: 13px;
+        }
+    }
+}

@@ -3,7 +3,17 @@
 .infosContainer {
     @include flex(column, flex-start, stretch, 50px);
     padding-bottom: 50px;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        gap: 27px;
+        padding-bottom: 27px;
+    }
+
     &__details {
         @include flex(column, flex-start, stretch, 30px);
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            gap: 15px;
+        }
     }
 }

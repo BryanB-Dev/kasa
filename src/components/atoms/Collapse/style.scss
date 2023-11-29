@@ -13,14 +13,19 @@
         @include flex(row, space-between, center, 0px);
         padding: 10px;
 
-        @media screen and (max-width: $breakpoint-mobile){
+        @media screen and (max-width: $breakpoint-mobile) {
             font-size: 13px;
+            border-radius: 5px;
         }
     }
-    
+
     &__title {
         font-weight: 500;
         color: $color-tertiary;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            line-height: 100%;
+        }
     }
 
     &__arrow {
@@ -29,6 +34,11 @@
         transition: all 0.3s linear;
         position: absolute;
         right: 20px;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            height: 28px;
+            width: 28px;
+        }
 
         &--open {
             transform: rotate(0deg);
@@ -40,8 +50,8 @@
         padding: 20px;
         max-height: 250px;
         transition: all .2s linear;
-        
-        @media screen and (max-width: $breakpoint-mobile){
+
+        @media screen and (max-width: $breakpoint-mobile) {
             max-height: 300px;
             font-size: 13px;
         }

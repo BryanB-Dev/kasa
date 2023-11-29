@@ -3,7 +3,7 @@ import InfosTemplate from '../../components/templates/InfosTemplate';
 import E404 from '../404';
 
 export default function Infos({ datas }) {
-    const { locationID } = useParams()
+    const { locationID } = useParams();
     const locationObject = datas.find(item => item.id === locationID)
 
     if (locationObject) {

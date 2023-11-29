@@ -1,11 +1,12 @@
 import "./style.scss";
+import { Link } from 'react-router-dom'
 
-export default function Card({img, title, href}) {
+export default function Card({img, title, id}) {
 
     return (
-        <a className="card" href={href}>
+        <Link className="card" to={`/infos/${id}`}>
             <img className="card__img" src={img} alt={title} />
             <p className="card__text">{title}</p>
-        </a>
+        </Link>
     )
 }

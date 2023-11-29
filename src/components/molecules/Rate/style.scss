@@ -1,3 +1,11 @@
+@import '../../../styles/main.scss';
+
 .rating {
     width: fit-content;
+    &>svg {
+        @media screen and (max-width: $breakpoint-mobile){
+            width: 19px;
+            height: 19px;
+        }
+    }
 }

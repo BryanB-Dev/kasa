@@ -9,4 +9,11 @@
     border-radius: 10px;
     text-align: center;
     width: fit-content;
+    flex-shrink: 0;
+    @media screen and (max-width: $breakpoint-mobile){
+        min-width: 84px;
+        height: 18px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
 }

@@ -4,6 +4,9 @@
     position: relative;
     @include flex(row, center, center, 0px);
     height: 415px;
+    @media screen and (max-width: $breakpoint-mobile){
+        height: 255px;
+    }
     &__img {
         position: absolute;
         width: 100%;

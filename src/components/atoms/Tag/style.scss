@@ -1,6 +1,7 @@
 @import '../../../styles/main.scss';
 
 .tag {
+    @include flex(row, flex-start, center);
     color: $color-tertiary;
     background-color: $color-primary;
     min-width: 115px;
